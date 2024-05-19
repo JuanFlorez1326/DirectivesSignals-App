@@ -12,7 +12,11 @@
         </div>
 
         <div class="col-auto">
-            <span customLabel [color]="color | uppercase">Information</span>
+            <span 
+                customLabel 
+                [color]="color | uppercase"
+                [errors]="myForm.get('name')?.errors"
+            >Information</span>
         </div>
     </div>
 
